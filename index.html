@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ------------ -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/logo-icon.png"
+      type="image/x-icon"
+    />
+    <title>Seebox | Social Site</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a class="logo">
+          <img src="./images/logo-icon.png" class="logo-icon" />
+          <h1 class="main-font">Seebox</h1>
+        </a>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="search here" class="input-bar" />
+          <input type="submit" value="Search" class="search-btn" />
+        </div>
+        <a class="user">
+          <img src="https://picsum.photos/id/91/200/300" class="profile-img" />
+          <h4 class="usr-name">Seebi</h4>
+        </a>
+      </div>
+      <!-- ------------/header------------ -->
+      <div class="main">
+        <div class="container">
+          <div class="left-side">
+            <div class="menu-items">
+              <div class="menu-item active">
+                <span
+                  ><i class="fa-solid fa-house"></i>
+                  <h3>Home</h3></span
+                >
+              </div>
+              <div class="menu-item">
+                <span
+                  ><i class="fa-solid fa-compass"></i>
+                  <h3>Explore</h3></span
+                >
+              </div>
+              <div class="menu-item" id="notifications">
+                <span
+                  ><i class="fa-solid fa-bell"></i>
+                  <h3>Notification</h3></span
+                >
+                <!-- ------notifications popup------- -->
+                <div class="notifications-popup">
+                  <div class="notification">
+                    <div class="user">
+                      <img src="https://picsum.photos/id/338/200/300" alt="" />
+                    </div>
+                    <div class="notification-text">
+                      <span
+                        ><b>Seebi</b>
+                        <h5>accepted your friend request.</h5></span
+                      >
+                      <small>1 minute ago</small>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="user">
+                      <img src="https://picsum.photos/id/602/200/300" alt="" />
+                    </div>
+                    <div class="notification-text">
+                      <span
+                        ><b>Sean</b>
+                        <h5>commented on your post.</h5></span
+                      >
+                      <small>5 minute ago</small>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="user">
+                      <img src="https://picsum.photos/id/1005/200/300" alt="" />
+                    </div>
+                    <div class="notification-text">
+                      <span
+                        ><b>Eliab</b>
+                        <h5>posted a photo.</h5></span
+                      >
+                      <small>8 minute ago</small>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="user">
+                      <img src="https://picsum.photos/id/1074/200/300" alt="" />
+                    </div>
+                    <div class="notification-text">
+                      <span
+                        ><b>Rafa'el</b>
+                        <h5>tagged you in a photo.</h5></span
+                      >
+                      <small>10 minute ago</small>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="user">
+                      <img src="https://picsum.photos/id/48/200/300" alt="" />
+                    </div>
+                    <div class="notification-text">
+                      <span
+                        ><b>Edorta</b>
+                        <h5>shared a link.</h5></span
+                      >
+                      <small>15 minute ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item" id="messages-notification">
+                <span
+                  ><i class="fa-solid fa-envelope"></i>
+                  <h3>Messages</h3></span
+                >
+              </div>
+              <div class="menu-item">
+                <span
+                  ><i class="fa-solid fa-bookmark"></i>
+                  <h3>Bookmark</h3></span
+                >
+              </div>
+              <div class="menu-item">
+                <span
+                  ><i class="fa-solid fa-chart-simple"></i>
+                  <h3>Analytic</h3></span
+                >
+              </div>
+              <div class="menu-item">
+                <span
+                  ><i class="fa-solid fa-palette"></i>
+                  <h3>Theme</h3></span
+                >
+              </div>
+              <div class="theme-customization">
+                <div class="top">
+                  <h1 class="title">Customize your theme</h1>
+                  <p>Manage your font size, color and background</p>
+                </div>
+                <div class="font-size">
+                  <h3>Font Size</h3>
+                  <div class="font-sizes">
+                    <h5>aa</h5>
+                    <h5>AA</h5>
+                  </div>
+                  <div class="bar">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+                <div class="font-color">
+                  <div class="bar">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+                <div class="dark-mode">
+                  <div class="light">
+                    <h3>Light Mode</h3>
+                  </div>
+                  <div class="dark">
+                    <h3>Dark Mode</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span
+                  ><i class="fa-solid fa-gear"></i>
+                  <h3>Settings</h3></span
+                >
+              </div>
+            </div>
+            <input type="submit" class="create-post" value="Create Post" />
+          </div>
+          <div class="middle-side">
+            <div class="post-box">
+              <div class="post">
+                <textarea
+                  name="postbar"
+                  id="postbar"
+                  placeholder="Write your post here!"
+                ></textarea>
+                <input
+                  type="submit"
+                  value="Post"
+                  class="post-btn create-post"
+                />
+              </div>
+            </div>
+            <!-- ---------feeds---------- -->
+            <div class="feeds">
+              <div class="feed">
+                <div class="top">
+                  <div class="usr-info">
+                    <div class="photo">
+                      <img
+                        src="https://picsum.photos/id/58/200/300"
+                        class="profile-img"
+                        alt=""
+                      />
+                    </div>
+                    <div class="user">
+                      <h4>Branson</h4>
+                      <small>1 hour ago</small>
+                    </div>
+                  </div>
+                  <div class="post-edit">
+                    <i class="fa-regular fa-edit"></i>
+                    <i class="fa-solid fa-times"></i>
+                  </div>
+                </div>
+                <div class="post-img">
+                  <img src="https://picsum.photos/id/37/2000/1333" alt="" />
+                </div>
+                <div class="action-btns">
+                  <div class="interactions">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-regular fa-share-from-square"></i>
+                  </div>
+                  <i class="fa-regular fa-bookmark"></i>
+                </div>
+                <div class="liked-by">
+                  <div class="liked-usrs">
+                    <img
+                      src="https://picsum.photos/id/50/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                    <img
+                      src="https://picsum.photos/id/60/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                    <img
+                      src="https://picsum.photos/id/70/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                  </div>
+                  <div class="liked-users">
+                    <p>Liked by <b>Joseph</b> and 1,499 others</p>
+                  </div>
+                </div>
+                <div class="caption">
+                  <p>
+                    <b>Branson</b> Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Deleniti, perspiciatis!
+                    <span class="hashtag">#lifestyle #nature #beauty</span>
+                  </p>
+                </div>
+              </div>
+              <!-- -------------- -->
+              <div class="feed">
+                <div class="top">
+                  <div class="usr-info">
+                    <div class="photo">
+                      <img
+                        src="https://picsum.photos/id/88/200/300"
+                        class="profile-img"
+                        alt=""
+                      />
+                    </div>
+                    <div class="user">
+                      <h4>Joakim</h4>
+                      <small>2 hour ago</small>
+                    </div>
+                  </div>
+                  <div class="post-edit">
+                    <i class="fa-regular fa-edit"></i>
+                    <i class="fa-solid fa-times"></i>
+                  </div>
+                </div>
+                <div class="post-img">
+                  <img src="https://picsum.photos/id/49/1280/792" alt="" />
+                </div>
+                <div class="action-btns">
+                  <div class="interactions">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-regular fa-share-from-square"></i>
+                  </div>
+                  <i class="fa-regular fa-bookmark"></i>
+                </div>
+                <div class="liked-by">
+                  <div class="liked-usrs">
+                    <img
+                      src="https://picsum.photos/id/48/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                    <img
+                      src="https://picsum.photos/id/58/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                    <img
+                      src="https://picsum.photos/id/68/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                  </div>
+                  <div class="liked-users">
+                    <p>Liked by <b>Rodolf</b> and 1,499 others</p>
+                  </div>
+                </div>
+                <div class="caption">
+                  <p>
+                    <b>Joakim</b> Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Deleniti, perspiciatis!
+                    <span class="hashtag">#lifestyle #nature #beauty</span>
+                  </p>
+                </div>
+              </div>
+              <!-- ------------------- -->
+              <div class="feed">
+                <div class="top">
+                  <div class="usr-info">
+                    <div class="photo">
+                      <img
+                        src="https://picsum.photos/id/108/200/300"
+                        class="profile-img"
+                        alt=""
+                      />
+                    </div>
+                    <div class="user">
+                      <h4>Gratianus</h4>
+                      <small>2 hour ago</small>
+                    </div>
+                  </div>
+                  <div class="post-edit">
+                    <i class="fa-regular fa-edit"></i>
+                    <i class="fa-solid fa-times"></i>
+                  </div>
+                </div>
+                <div class="post-img">
+                  <img src="https://picsum.photos/id/76/4912/3264" alt="" />
+                </div>
+                <div class="action-btns">
+                  <div class="interactions">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-regular fa-share-from-square"></i>
+                  </div>
+                  <i class="fa-regular fa-bookmark"></i>
+                </div>
+                <div class="liked-by">
+                  <div class="liked-usrs">
+                    <img
+                      src="https://picsum.photos/id/128/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                    <img
+                      src="https://picsum.photos/id/248/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                    <img
+                      src="https://picsum.photos/id/177/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                  </div>
+                  <div class="liked-users">
+                    <p>Liked by <b>Firminus</b> and 1,499 others</p>
+                  </div>
+                </div>
+                <div class="caption">
+                  <p>
+                    <b>Gratianus</b> Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Deleniti, perspiciatis!
+                    <span class="hashtag">#lifestyle #nature #beauty</span>
+                  </p>
+                </div>
+              </div>
+              <!-- ---------------------- -->
+              <div class="feed">
+                <div class="top">
+                  <div class="usr-info">
+                    <div class="photo">
+                      <img
+                        src="https://picsum.photos/id/218/200/300"
+                        class="profile-img"
+                        alt=""
+                      />
+                    </div>
+                    <div class="user">
+                      <h4>Oliver</h4>
+                      <small>2 hour ago</small>
+                    </div>
+                  </div>
+                  <div class="post-edit">
+                    <i class="fa-regular fa-edit"></i>
+                    <i class="fa-solid fa-times"></i>
+                  </div>
+                </div>
+                <div class="post-img">
+                  <img src="https://picsum.photos/id/676/4912/3264" alt="" />
+                </div>
+                <div class="action-btns">
+                  <div class="interactions">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-regular fa-share-from-square"></i>
+                  </div>
+                  <i class="fa-regular fa-bookmark"></i>
+                </div>
+                <div class="liked-by">
+                  <div class="liked-usrs">
+                    <img
+                      src="https://picsum.photos/id/128/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                    <img
+                      src="https://picsum.photos/id/248/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                    <img
+                      src="https://picsum.photos/id/177/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                  </div>
+                  <div class="liked-users">
+                    <p>Liked by <b>Firminus</b> and 1,499 others</p>
+                  </div>
+                </div>
+                <div class="caption">
+                  <p>
+                    <b>Oliver</b> Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Deleniti, perspiciatis!
+                    <span class="hashtag">#lifestyle #nature #beauty</span>
+                  </p>
+                </div>
+              </div>
+              <!-- ------------- -->
+              <div class="feed">
+                <div class="top">
+                  <div class="usr-info">
+                    <div class="photo">
+                      <img
+                        src="https://picsum.photos/id/104/200/300"
+                        class="profile-img"
+                        alt=""
+                      />
+                    </div>
+                    <div class="user">
+                      <h4>Matteus</h4>
+                      <small>3 hour ago</small>
+                    </div>
+                  </div>
+                  <div class="post-edit">
+                    <i class="fa-regular fa-edit"></i>
+                    <i class="fa-solid fa-times"></i>
+                  </div>
+                </div>
+                <div class="post-img">
+                  <img src="https://picsum.photos/id/376/4912/3264" alt="" />
+                </div>
+                <div class="action-btns">
+                  <div class="interactions">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-regular fa-share-from-square"></i>
+                  </div>
+                  <i class="fa-regular fa-bookmark"></i>
+                </div>
+                <div class="liked-by">
+                  <div class="liked-usrs">
+                    <img
+                      src="https://picsum.photos/id/188/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                    <img
+                      src="https://picsum.photos/id/228/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                    <img
+                      src="https://picsum.photos/id/127/200/300"
+                      class="profile-img"
+                      alt=""
+                    />
+                  </div>
+                  <div class="liked-users">
+                    <p>Liked by <b>Firminus</b> and 1,499 others</p>
+                  </div>
+                </div>
+                <div class="caption">
+                  <p>
+                    <b>Matteus</b> Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Deleniti, perspiciatis!
+                    <span class="hashtag">#lifestyle #nature #beauty</span>
+                  </p>
+                </div>
+              </div>
+              <!-- ------------- -->
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="message-box">
+              <div class="top">
+                <h4>Messages</h4>
+                <i class="fa-regular fa-edit"></i>
+              </div>
+              <div class="search-msgs search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                  type="search"
+                  class="input-bar"
+                  placeholder="Search Messages"
+                  id="message-search"
+                />
+              </div>
+              <div class="category">
+                <h5 class="active">General</h5>
+                <h5>Primary</h5>
+                <h5>Requests(15)</h5>
+              </div>
+              <div class="messages">
+                <div class="message active">
+                  <div class="user">
+                    <img
+                      src="https://picsum.photos/id/580/100"
+                      class="profile-img"
+                      alt=""
+                    />
+                    <div class="active"></div>
+                  </div>
+                  <div class="msg-info" id="user">
+                    <h5>Rambert</h5>
+                    <small>Are you free tonight?</small>
+                  </div>
+                  <div class="msg-time"><small>5 min ago</small></div>
+                </div>
+                <!-- ----------------- -->
+                <div class="message">
+                  <div class="user">
+                    <img
+                      src="https://picsum.photos/id/538/100"
+                      class="profile-img"
+                      alt=""
+                    />
+                    <div></div>
+                  </div>
+                  <div class="msg-info" id="user">
+                    <h5>Jengo</h5>
+                    <small>Hello!</small>
+                  </div>
+                  <div class="msg-time"><small>15 min ago</small></div>
+                </div>
+                <!-- --------------- -->
+              </div>
+            </div>
+            <!-- ----------------requests------------------ -->
+            <div class="requests">
+              <div class="top">
+                <h4>Requests</h4>
+                <h4>(5)</h4>
+              </div>
+              <div class="request">
+                <div class="user">
+                  <img
+                    src="https://picsum.photos/id/142/100"
+                    alt=""
+                    class="profile-img"
+                  />
+                </div>
+                <div class="req-info">
+                  <h5>Uttara</h5>
+                  <small>25 Mutual Friends</small>
+                  <div class="btns">
+                    <button class="accept-btn">Accept</button>
+                    <button class="delete-btn">Delete</button>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------- -->
+              <div class="request">
+                <div class="user">
+                  <img
+                    src="https://picsum.photos/id/129/100"
+                    alt=""
+                    class="profile-img"
+                  />
+                </div>
+                <div class="req-info">
+                  <h5>Mervyn</h5>
+                  <small>51 Mutual Friends</small>
+                  <div class="btns">
+                    <button class="accept-btn">Accept</button>
+                    <button class="delete-btn">Delete</button>
+                  </div>
+                </div>
+              </div>
+              <!-- --------------------- -->
+              <div class="see-more">
+                <small>See More</small>
+              </div>
+            </div>
+            <!-- ----------------/requests------------------ -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script/index.js"></script>
+  </body>
+</html>
